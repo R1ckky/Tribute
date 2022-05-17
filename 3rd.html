@@ -4,21 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShoeBrand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/3rd.css" />
-    <title>Document</title>
   </head>
   <body>
-    <section class="authentic">
-      <div class="right-col">
-        <h2>Michael Reeves</h2>
-        <p>
-          Michael Reeves (born: November 20, 1997 [age 24]) is a American YouTuber and former software
-          contractor who is known for making content about technology and programming. He is also a member of
-          the streamer group Offline TV, which consists of nine other creators, with Pokimane being one of the
-          most recognizable.
-        </p>
-      </div>
-      <img src="/images/FNwLLTjVUAERpg3.jpg" alt="Picture of food in a bowl" />
-    </section>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+      <section class="more-info">
+        <div class="feature">
+          <div class="contet">
+            <p class="title">Lightweight</p>
+            <p class="desc">
+              While Reeves was attending Northern Arizona University, he released his first video on YouTube, The Robot That Shines a Laser in Your Eye, which went viral. His subsequent videos included a Roomba that swore upon colliding with a wall, a taser camera that shocked its subjects, a Twitter bot that purchased items from the replies that received the most likes, and a modification of Boston Dynamics’s robot dog Spot that urinated beer into a cup on command. 
+            </p>
+          </div>
+          <img src="/images/shoe2.jpg" alt="" />
+        </div>
+
+        <div class="feature left">
+          <div class="contet">
+            <p class="title">Affordable</p>
+            <p class="desc">
+              In September of 2018, Reeves moved from Hawaii to Los Angeles to pursue YouTube full time. In December 2019, it was announced that Reeves had joined OfflineTV, a collective of Twitch streamers creating content and living together in Los Angeles, California. In June 2020, Reeves began streaming on Twitch, where he streams both video games and technology work. His debut stream attracted over 30,000 concurrent viewers. He now has a little over 6.7M subscribers on Youtuvbe and 1.5 followers on Twitch.
+            </p>
+          </div>
+          <img src="/images/shoe3.jpg" alt="" />
+        </div>
+        <a href="index.html"><button id="b4" class="hide">Home/About</button></a>
+
+    <script>
+      const menu = document.querySelector(".menu");
+      const close = document.querySelector(".close");
+      const nav = document.querySelector("nav");
+
+      menu.addEventListener("click", () => {
+        nav.classList.add("open-nav");
+      });
+
+      close.addEventListener("click", () => {
+        nav.classList.remove("open-nav");
+      });
+    </script>
   </body>
 </html>
