@@ -14,10 +14,17 @@ button {
   background: #aec2c9;
   font-size: 140%;
   padding: 10px 16px;
-  margin-right: 15px;
+  margin-top: 3em;
+  margin-left: 22em;
   color: black;
   font-weight: 300;
   transition: background-color 0.2s ease-in-out;
+}
+
+p {
+  line-height: var(--leading);
+  font-size: 1.4rem;
+  margin-bottom: 5em;
 }
 
 .navbar {
